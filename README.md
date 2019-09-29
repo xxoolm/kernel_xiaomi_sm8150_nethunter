@@ -26,12 +26,12 @@ Warning: This kernel and instruction is for study purpose only. I will not be he
 
 ==>Only support for MIUI and using other rom may not boot !!!!!!!!!!
 
-Known issues
+# Known issues
 
 Boot prompt system error (But not, and I don't know where the error is)
 
 
-How to build 
+# How to build 
 Here is a detailed compilation tutorial  https://github.com/MiCode/Xiaomi_Kernel_OpenSource/wiki/How-to-compile-kernel-standalone
 After compiling, you need to use anykernel3 to build package.
 
@@ -42,11 +42,11 @@ The image which builds in /out/arch/arm64/boot/Image-dtb has to be repacked into
 Magisk 19.3 or 19.4 (Canary beta builds, for root) or disable-dm-verity-force-encrypt.zip (no root) needs to be installed in TWRP to boot.  Be sure to flash one of the above files or the ROM will not boot!
 
 
-Need to be patched after the kernel flash is completed
+# Need to be patched after the kernel flash is completed
 1.Copy everything in init.nethunter.rc to your system /system_root/init.usb.configfs.rc  
 2.Copy content 
 
-# HID driver
+HID driver
 /dev/hidg* 0666 root root 
 
 below "/dev/kgsl.*root.*root" in ueventd.rc
@@ -62,7 +62,7 @@ https://github.com/johanlike/DJY-Nethunter-Magisk-Modules/releases/download/DJY-
 Three files "init.nethunter.rc","keyboard-descriptor.bin" and "keyboard-descriptor.bin" I have already stored it in the "build" directory.
 
 
-PS: If HID Attack can’t work, please run one of the following commands in Android shell (under root privillage) :
+# PS: If HID Attack can’t work, please run one of the following commands in Android shell (under root privillage) :
 
 setprop sys.usb.config win,hid
 setprop sys.usb.config win,mass_storage
@@ -95,7 +95,7 @@ setprop sys.usb.config mac,ecm,hid,adb,mass_storage
 
 
 
-And last
+# And last
 
 I want to thank HID patch support and WIFI injection provided by re4son.
 https://github.com/Re4son/android_kernel_oneplus_sm8150/commits/nethunter-9.0
