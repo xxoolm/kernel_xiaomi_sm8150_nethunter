@@ -47,6 +47,7 @@ Magisk 19.3 or 19.4 (Canary beta builds, for root) or disable-dm-verity-force-en
 2.Copy content 
 
 HID driver
+
 /dev/hidg* 0666 root root 
 
 below "/dev/kgsl.*root.*root" in ueventd.rc
@@ -65,32 +66,59 @@ Three files "init.nethunter.rc","keyboard-descriptor.bin" and "keyboard-descript
 # PS: If HID Attack can’t work, please run one of the following commands in Android shell (under root privillage) :
 
 setprop sys.usb.config win,hid
+
 setprop sys.usb.config win,mass_storage
+
 setprop sys.usb.config win,rndis
+
 setprop sys.usb.config win,hid,mass_storage
+
 setprop sys.usb.config win,rndis,hid
+
 setprop sys.usb.config win,rndis,mass_storage
+
 setprop sys.usb.config win,rndis,hid,mass_storage
+
 setprop sys.usb.config mac,hid
+
 setprop sys.usb.config mac,mass_storage
+
 setprop sys.usb.config mac,ecm
+
 setprop sys.usb.config mac,hid,mass_storage
+
 setprop sys.usb.config mac,ecm,hid
+
 setprop sys.usb.config mac,ecm,mass_storage
+
 setprop sys.usb.config mac,ecm,hid,mass_storage
+
 setprop sys.usb.config win,hid,adb
+
 setprop sys.usb.config win,mass_storage
+
 setprop sys.usb.config win,rndis
+
 setprop sys.usb.config win,hid,adb,mass_storage
+
 setprop sys.usb.config win,rndis,hid,adb
+
 setprop sys.usb.config win,rndis,mass_storage
+
 setprop sys.usb.config win,rndis,hid,adb,mass_storage
+
 setprop sys.usb.config mac,hid,adb
+
 setprop sys.usb.config mac,mass_storage
+
 setprop sys.usb.config mac,ecm
+
 setprop sys.usb.config mac,hid,adb,mass_storage
+
 setprop sys.usb.config mac,ecm,hid,adb
+
 setprop sys.usb.config mac,ecm,mass_storage
+
 setprop sys.usb.config mac,ecm,hid,adb,mass_storage
 
 
