@@ -46,8 +46,6 @@ Magisk 19.3 or 19.4 (Canary beta builds, for root) or disable-dm-verity-force-en
 1.Copy everything in init.nethunter.rc to your system /system_root/init.usb.configfs.rc  
 2.Copy content 
 
-HID driver
-
 /dev/hidg* 0666 root root 
 
 below "/dev/kgsl.*root.*root" in ueventd.rc
