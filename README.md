@@ -10,8 +10,10 @@ Warning: This kernel and instruction is for study purpose only. I will not be he
 
 ==>Built basing on Evira kernel configuration files to ensure powersave and speed.
    There are author links  https://github.com/EviraKernel/Officialmi9 
+
 ==>Support for Evira kernel features
    https://github.com/EviraKernel/Officialmi9/blob/Evira_Miui/README
+
 ==>Support for HID Attack
 
 ==>Support for Droidducky Attack
