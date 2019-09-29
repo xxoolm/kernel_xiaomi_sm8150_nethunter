@@ -57,7 +57,7 @@ below "/dev/kgsl.*root.*root" in ueventd.rc
 4.Flash the magisk modules to add wireless inject firmware
 https://github.com/johanlike/DJY-Nethunter-Magisk-Modules/releases/download/DJY-Magisk-modules-V67/DJY-Magisk-modules-V67.zip
 
-5. Reboot
+5.Reboot
 
 
 Three files "init.nethunter.rc","keyboard-descriptor.bin" and "keyboard-descriptor.bin" I have already stored it in the "build" directory.
